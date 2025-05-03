@@ -10,7 +10,7 @@ L (Load)：將資料載入目標資料庫（如 MySQL、MongoDB、BigQuery）
 
 Pandas 操作筆記
 
-1. 基礎結構
+    1. 基礎結構
    
 DataFrame: 二維表格結構，欄位名稱＋列索引
 
@@ -20,7 +20,7 @@ import pandas as pd
 
 df = pd.DataFrame(data)
 
-2. 空值處理
+    2. 空值處理
 
 NaN 與 Python 的 None 不同
 
@@ -34,7 +34,7 @@ NaN 與 Python 的 None 不同
 
 後向填補：df.bfill()
 
-3. 時間格式處理
+    3. 時間格式處理
    
 轉換時間欄位：
 
@@ -42,7 +42,7 @@ df['time'] = df['time'].apply(pd.to_datetime)
 
 錯誤格式會變成 NaT
 
-4. DataFrame 操作
+    4. DataFrame 操作
    
 合併資料（類似 SQL JOIN）：
 
@@ -58,7 +58,7 @@ import pandasql as ps
 
 ps.sqldf("SELECT * FROM df WHERE col > 5", locals())
 
-5. 拷貝與修改
+    5. 拷貝與修改
    
 複製 DataFrame：df.copy()
 
