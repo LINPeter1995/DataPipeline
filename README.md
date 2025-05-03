@@ -1,6 +1,6 @@
 # DataPipeline
 
-🔄 ETL 基礎概念
+ETL 基礎概念
 
 E (Extract)：從資料來源取得資料（如 API、資料庫、網頁等）
 
@@ -8,7 +8,7 @@ T (Transform)：資料清洗、轉換、格式化（使用 Pandas 等工具）
 
 L (Load)：將資料載入目標資料庫（如 MySQL、MongoDB、BigQuery）
 
-📊 Pandas 操作筆記
+Pandas 操作筆記
 
 1. 基礎結構
    
@@ -64,7 +64,7 @@ ps.sqldf("SELECT * FROM df WHERE col > 5", locals())
 
 避免 chained assignment 錯誤警告
 
-🐍 資料庫連線操作
+資料庫連線操作
 
 # MySQL（pymysql）
 
@@ -97,7 +97,7 @@ import pandas as pd
 df = pd.read_sql("SELECT * FROM table", conn)
 
 
-# 🌐 網頁爬蟲工具
+# 網頁爬蟲工具
 
 # requests + BeautifulSoup
 
@@ -121,7 +121,7 @@ driver.get("https://maps.google.com")
 
 page = driver.page_source
 
-# 📁 專案管理與 Poetry + DevContainer
+# 專案管理與 Poetry + DevContainer
 
 Poetry
 
@@ -137,7 +137,7 @@ DevContainer
 
 配合 Dockerfile 自動建構虛擬環境
 
-# ⏰ Airflow 流程排程工具
+# Airflow 流程排程工具
 
 安裝與啟動
 
@@ -171,7 +171,7 @@ with DAG(dag_id="example", start_date=datetime(2024, 1, 1), schedule_interval="@
 
 Web UI 控制台：localhost:8080
 
-🔁 Prefect（現代化替代 Airflow）
+# Prefect（現代化替代 Airflow）
 
 基本使用
 
@@ -192,7 +192,8 @@ my_flow()
 
 UI 簡潔易用，支援流量監控與排程
 
-🌐 Flask Web 應用框架
+# Flask Web 應用框架
+
 快速啟動
 
 from flask import Flask, request
