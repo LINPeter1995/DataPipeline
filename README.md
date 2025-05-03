@@ -42,7 +42,7 @@ df['time'] = df['time'].apply(pd.to_datetime)
 
 錯誤格式會變成 NaT
 
-5. DataFrame 操作
+4. DataFrame 操作
    
 合併資料（類似 SQL JOIN）：
 
@@ -58,7 +58,7 @@ import pandasql as ps
 
 ps.sqldf("SELECT * FROM df WHERE col > 5", locals())
 
-7. 拷貝與修改
+5. 拷貝與修改
    
 複製 DataFrame：df.copy()
 
